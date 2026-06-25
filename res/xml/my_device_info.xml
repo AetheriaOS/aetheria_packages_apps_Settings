@@ -24,8 +24,12 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
         android:layout="@layout/settings_entity_header"
-        android:selectable="false"
-        settings:isPreferenceVisible="true"/>
+        android:selectable="true"
+        settings:isPreferenceVisible="true">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/AetheriaOS"/>
+    </com.android.settingslib.widget.LayoutPreference>
 
     <PreferenceCategory
         android:key="basic_info_category"
@@ -145,25 +149,41 @@
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
             settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
-      <!-- Aetheria version -->
-    <Preference
-       android:key="aetheria_version"
-       android:order="43"
-       android:title="AetheriaOS Version"
-       android:summary="@string/summary_placeholder"
-       settings:enableCopying="true"
-       settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
-      
+        <!-- Aetheria version -->
+        <Preference
+            android:key="aetheria_version"
+            android:order="43"
+            android:title="AetheriaOS Version"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
+
+        <!-- Build type -->
+        <Preference
+            android:key="aetheria_build_type"
+            android:order="44"
+            android:title="Build Type"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"/>
+
+        <!-- Maintainer -->
+        <Preference
+            android:key="aetheria_maintainer"
+            android:order="45"
+            android:title="Maintainer"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="device_identifiers_category"
         android:title="@string/my_device_info_device_identifiers_category_title">
 
-        <!--IP address -->
+        <!-- IP address -->
         <Preference
             android:key="wifi_ip_address"
-            android:order="44"
+            android:order="46"
             android:title="@string/wifi_ip_address"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
@@ -172,7 +192,7 @@
         <!-- Wi-Fi MAC address -->
         <Preference
             android:key="saved_accesspoints_wifi_mac_address"
-            android:order="45"
+            android:order="47"
             android:title="@string/status_wifi_mac_address"
             android:summary="@string/view_saved_network"
             android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
@@ -181,7 +201,7 @@
         <!-- Factory Wi-Fi MAC address -->
         <Preference
             android:key="wifi_mac_address"
-            android:order="46"
+            android:order="48"
             android:title="@string/status_device_wifi_mac_address"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
@@ -190,7 +210,7 @@
         <!-- Bluetooth address -->
         <Preference
             android:key="bt_address"
-            android:order="47"
+            android:order="49"
             android:title="@string/status_bt_address"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
@@ -199,7 +219,7 @@
         <!-- Device up time -->
         <Preference
             android:key="up_time"
-            android:order="48"
+            android:order="50"
             android:title="@string/status_up_time"
             android:summary="@string/summary_placeholder"
             android:selectable="false"/>
@@ -207,7 +227,7 @@
         <!-- Manual -->
         <Preference
             android:key="manual"
-            android:order="50"
+            android:order="51"
             android:title="@string/manual">
             <intent android:action="android.settings.SHOW_MANUAL"
                     android:targetPackage="${applicationId}"/>
@@ -216,21 +236,21 @@
         <!-- Feedback on the device -->
         <Preference
             android:key="device_feedback"
-            android:order="51"
+            android:order="52"
             android:title="@string/device_feedback"
             settings:keywords="@string/keywords_device_feedback"/>
 
         <!-- Device FCC equipment id -->
         <Preference
             android:key="fcc_equipment_id"
-            android:order="52"
+            android:order="53"
             android:title="@string/fcc_equipment_id"
             android:summary="@string/summary_placeholder"/>
 
         <!-- Build number -->
         <Preference
             android:key="build_number"
-            android:order="53"
+            android:order="54"
             android:title="@string/build_number"
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
