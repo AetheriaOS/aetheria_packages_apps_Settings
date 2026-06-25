@@ -159,20 +159,22 @@
             settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
 
         <!-- Build type -->
-        <Preference
-            android:key="aetheria_build_type"
-            android:order="44"
-            android:title="Build Type"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"/>
+<Preference
+    android:key="aetheria_build_type"
+    android:order="44"
+    android:title="Build Type"
+    android:summary="@string/summary_placeholder"
+    settings:enableCopying="true"
+    settings:controller="com.android.settings.deviceinfo.AetheriaBuildTypePreferenceController"/>
 
         <!-- Maintainer -->
-        <Preference
-            android:key="aetheria_maintainer"
-            android:order="45"
-            android:title="Maintainer"
-            android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"/>
+<Preference
+    android:key="aetheria_maintainer"
+    android:order="45"
+    android:title="Maintainer"
+    android:summary="@string/summary_placeholder"
+    settings:enableCopying="true"
+    settings:controller="com.android.settings.deviceinfo.AetheriaMaintainerPreferenceController"/>
 
     </PreferenceCategory>
 
