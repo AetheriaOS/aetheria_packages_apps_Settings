@@ -25,7 +25,7 @@
         android:key="my_device_info_header"
         android:layout="@layout/settings_entity_header"
         android:selectable="false"
-        settings:isPreferenceVisible="false"/>
+        settings:isPreferenceVisible="true"/>
 
     <PreferenceCategory
         android:key="basic_info_category"
