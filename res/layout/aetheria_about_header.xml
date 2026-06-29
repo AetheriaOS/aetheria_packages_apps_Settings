@@ -67,7 +67,8 @@
                     android:layout_height="52dp"
                     android:background="#3d3d3d"
                     android:padding="8dp"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_aetheria_logo"/>
 
             </LinearLayout>
 
