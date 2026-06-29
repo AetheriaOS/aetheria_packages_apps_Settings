@@ -12,7 +12,7 @@ import com.android.settingslib.widget.LayoutPreference;
 
 public class AetheriaAboutHeaderController extends BasePreferenceController {
 
-    private static final String PROP_VERSION = "ro.aetheria.display.version";
+    private static final String PROP_VERSION = "ro.aetheria.build.version";
     private static final String PROP_BUILD_TYPE = "ro.aetheria.releasetype";
     private static final String PROP_DEVICE = "ro.product.device";
     private static final String PROP_MAINTAINER = "ro.aetheria.maintainer";
