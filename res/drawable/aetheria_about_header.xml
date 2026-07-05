@@ -9,7 +9,6 @@
     android:paddingTop="16dp"
     android:paddingBottom="16dp">
 
-    <!-- Row: "Aetheria" + status icon + "S" -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +38,6 @@
             android:textColor="@android:color/white" />
     </LinearLayout>
 
-    <!-- "sagit | 1.0 | official" -->
     <TextView
         android:id="@+id/aetheria_device_info"
         android:layout_width="wrap_content"
@@ -48,7 +46,6 @@
         android:textSize="12sp"
         android:textColor="#9A988F" />
 
-    <!-- "Beyond the horizon of possibility" -->
     <TextView
         android:id="@+id/aetheria_tagline"
         android:layout_width="wrap_content"
@@ -87,7 +84,6 @@
             android:layout_marginStart="10dp"
             android:orientation="vertical">
 
-            <!-- "Verified maintainer" / "Unverified build" -->
             <TextView
                 android:id="@+id/aetheria_maintainer_status"
                 android:layout_width="wrap_content"
@@ -95,7 +91,6 @@
                 android:textSize="13sp"
                 android:textColor="#E8E6E1" />
 
-            <!-- "Maintained by N1709" -->
             <TextView
                 android:id="@+id/aetheria_maintainer"
                 android:layout_width="wrap_content"
