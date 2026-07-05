@@ -64,9 +64,9 @@ public class AetheriaAboutHeaderController extends BasePreferenceController {
             maintainerStatus.setText(isOfficial ? "Verified maintainer" : "Unverified build");
         }
 
-        TextView avatar = pref.findViewById(R.id.aetheria_avatar);
-        if (avatar != null && maintainer.length() > 0) {
-            avatar.setText(String.valueOf(maintainer.charAt(0)).toUpperCase());
+        ImageView avatar = pref.findViewById(R.id.aetheria_avatar);
+        if (avatar != null) {
+            avatar.setImageResource(R.drawable.ic_aetheria_maintainer_avatar);
         }
 
         ImageView statusIcon = pref.findViewById(R.id.aetheria_status_icon);
