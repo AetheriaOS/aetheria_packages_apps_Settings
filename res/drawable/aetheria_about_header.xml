@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/aetheria_about_card_bg"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <!-- Row: "Aetheria" + status icon + "S" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aetheria"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/aetheria_status_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginEnd="-1dp"
+            android:contentDescription="@string/aetheria_build_status_desc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- "sagit | 1.0 | official" -->
+    <TextView
+        android:id="@+id/aetheria_device_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="12sp"
+        android:textColor="#9A988F" />
+
+    <!-- "Beyond the horizon of possibility" -->
+    <TextView
+        android:id="@+id/aetheria_tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textStyle="italic"
+        android:textSize="11sp"
+        android:textColor="#7A7870" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="#333333" />
+
+    <!-- Maintainer row: avatar + status + name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/aetheria_avatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/aetheria_avatar_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <!-- "Verified maintainer" / "Unverified build" -->
+            <TextView
+                android:id="@+id/aetheria_maintainer_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#E8E6E1" />
+
+            <!-- "Maintained by N1709" -->
+            <TextView
+                android:id="@+id/aetheria_maintainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="11sp"
+                android:textColor="#7A7870" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
