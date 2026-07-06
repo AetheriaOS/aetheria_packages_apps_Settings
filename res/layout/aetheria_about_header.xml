@@ -10,16 +10,68 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#2a2a2a"
+        app:cardCornerRadius="24dp"
         app:cardElevation="0dp">
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="@drawable/aetheria_about_card_bg">
 
-            <!-- ROM Info -->
+            <View
+                android:id="@+id/aetheria_status_accent"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="28dp"
+                android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/aetheria_build_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BDFFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08"/>
+
+                <TextView
+                    android:id="@+id/aetheria_rom_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp"
+                    android:fontFamily="sans-serif-black"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="24sp"
+                    android:autoSizeMaxTextSize="40sp"
+                    android:maxLines="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#1FFFFFFF"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -27,74 +79,14 @@
                 android:padding="20dp"
                 android:gravity="center_vertical">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="AetheriaOS"
-                        android:textColor="#FFFFFF"
-                        android:textSize="24sp"
-                        android:textStyle="bold"/>
-
-                    <TextView
-                        android:id="@+id/aetheria_device_info"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:textColor="#BDFFFFFF"
-                        android:textSize="13sp"/>
-
-                    <TextView
-                        android:id="@+id/aetheria_tagline"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:textColor="#66FFFFFF"
-                        android:textSize="11sp"
-                        android:textStyle="italic"/>
-
-                </LinearLayout>
-
-                <!-- Logo placeholder -->
                 <ImageView
-                    android:id="@+id/aetheria_logo"
-                    android:layout_width="52dp"
-                    android:layout_height="52dp"
-                    android:background="#3d3d3d"
-                    android:padding="8dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/ic_aetheria_logo"/>
-
-            </LinearLayout>
-
-            <!-- Divider -->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="#1FFFFFFF"/>
-
-            <!-- Maintainer -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:gravity="center_vertical">
-
-                <ImageView
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
+                    android:id="@+id/aetheria_avatar"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:background="#1FFFFFFF"
                     android:padding="6dp"
-                    android:src="@drawable/ic_check"
-                    android:layout_marginEnd="10dp"/>
+                    android:src="@drawable/ic_aetheria_maintainer_avatar"
+                    android:layout_marginEnd="12dp"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -102,9 +94,9 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/aetheria_maintainer_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Verified maintainer"
                         android:textColor="#FFFFFF"
                         android:textSize="13sp"
                         android:textStyle="bold"/>
@@ -120,7 +112,8 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>
