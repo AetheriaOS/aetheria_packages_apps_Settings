@@ -264,4 +264,17 @@
             settings:controller="com.android.settings.support.SupportPreferenceController"/>
     </PreferenceCategory>
 
+      <PreferenceCategory
+    android:order="-155"
+    android:key="top_level_extension_category"
+    android:layout="@layout/settingslib_expressive_untitled_preference_category">
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.aetheria.ExtensionSettings"
+        android:icon="@drawable/ic_settings_extension"
+        android:key="top_level_extension"
+        android:order="-155"
+        android:title="@string/extension_dashboard_title"
+        android:summary="@string/extension_dashboard_summary"/>
+  </PreferenceCategory>
+  
 </PreferenceScreen>
