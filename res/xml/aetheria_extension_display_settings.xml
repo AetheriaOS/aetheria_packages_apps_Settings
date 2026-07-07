@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="aetheria_extension_display_settings"
+    android:title="@string/extension_display_title">
+
+    <SwitchPreference
+        android:key="aetheria_display_force_peak_refresh_rate"
+        android:title="@string/display_force_peak_refresh_rate_title"
+        android:summary="@string/display_force_peak_refresh_rate_summary"
+        android:defaultValue="false"
+        settings:controller="com.android.settings.aetheria.display.ForcePeakRefreshRatePreferenceController"/>
+
+</PreferenceScreen>
