@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="aetheria_extension_settings"
+    android:title="@string/extension_dashboard_title">
+
+    <PreferenceCategory android:title="@string/extension_category_customization">
+
+        <Preference
+            android:key="aetheria_extension_statusbar"
+            android:title="@string/extension_statusbar_title"
+            android:summary="@string/extension_statusbar_summary"
+            android:fragment="com.android.settings.aetheria.statusbar.StatusbarSettings"/>
+
+        <Preference
+            android:key="aetheria_extension_display"
+            android:title="@string/extension_display_title"
+            android:summary="@string/extension_display_summary"
+            android:fragment="com.android.settings.aetheria.display.ExtensionDisplaySettings"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
