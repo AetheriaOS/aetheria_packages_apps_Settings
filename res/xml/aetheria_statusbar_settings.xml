@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="aetheria_statusbar_settings"
+    android:title="@string/extension_statusbar_title">
+
+    <SwitchPreference
+        android:key="aetheria_statusbar_network_speed"
+        android:title="@string/statusbar_network_speed_title"
+        android:summary="@string/statusbar_network_speed_summary"
+        android:defaultValue="false"
+        settings:controller="com.android.settings.aetheria.statusbar.NetworkSpeedPreferenceController"/>
+
+    <ListPreference
+        android:key="aetheria_statusbar_battery_style"
+        android:title="@string/statusbar_battery_style_title"
+        android:summary="%s"
+        android:entries="@array/statusbar_battery_style_entries"
+        android:entryValues="@array/statusbar_battery_style_values"
+        settings:controller="com.android.settings.aetheria.statusbar.BatteryStylePreferenceController"/>
+
+</PreferenceScreen>
