@@ -1656,41 +1656,27 @@
     <string-array name="display_over_apps_permission_change_exempt">
     </string-array>
 
-    <!-- Titles for Action Corner customization option. [CHAR LIMIT=35] -->
-    <string-array name="action_corner_action_titles">
-        <item>None</item>
-        <item>Home</item>
-        <item>Recent apps</item>
-        <item>Notifications</item>
-        <item>Quick settings</item>
-        <item>Lockscreen</item>
-    </string-array>
+   <!-- Titles for Action Corner customization option. [CHAR LIMIT=35] -->
+<string-array name="action_corner_action_titles">
+    <item>None</item>
+    <item>Home</item>
+    <item>Recent apps</item>
+    <item>Notifications</item>
+    <item>Quick settings</item>
+    <item>Lockscreen</item>
+</string-array>
 
-    <string-array name="statusbar_battery_style_entries">
+<string-array name="statusbar_battery_style_entries">
     <item>Portrait</item>
     <item>Circle</item>
-    <item>Text only</item>
     <item>Hidden</item>
+    <item>Plain text</item>
 </string-array>
 
 <string-array name="statusbar_battery_style_values">
     <item>0</item>
-    <item>1</item>
     <item>2</item>
-    <item>3</item>
+    <item>4</item>
+    <item>6</item>
 </string-array>
-
-    <string-array name="statusbar_battery_style_entries">
-        <item>Portrait</item>
-        <item>Circle</item>
-        <item>Text only</item>
-        <item>Hidden</item>
-    </string-array>
-
-    <string-array name="statusbar_battery_style_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
 </resources>
