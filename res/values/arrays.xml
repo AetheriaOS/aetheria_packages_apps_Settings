@@ -1666,3 +1666,17 @@
         <item>Lockscreen</item>
     </string-array>
 </resources>
+
+<string-array name="statusbar_battery_style_entries">
+    <item>Portrait</item>
+    <item>Circle</item>
+    <item>Text only</item>
+    <item>Hidden</item>
+</string-array>
+
+<string-array name="statusbar_battery_style_values">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+</string-array>
