@@ -70,7 +70,9 @@ public class AetheriaAboutHeaderController extends BasePreferenceController {
 
         ImageView avatar = pref.findViewById(R.id.aetheria_avatar);
         if (avatar != null) {
-            avatar.setImageResource(R.drawable.ic_aetheria_maintainer_avatar);
+            avatar.setImageResource(isOfficial
+                    ? R.drawable.ic_aetheria_maintainer_avatar
+                    : R.drawable.ic_aetheria_logo);
         }
     }
 }
