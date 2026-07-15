@@ -14963,18 +14963,4 @@
     <string name="display_force_peak_refresh_rate_title">Force peak refresh rate</string>
     <string name="display_force_peak_refresh_rate_summary">Always use the highest available refresh rate</string>
 
-    <string name="extension_dashboard_title">Extension</string>
-    <string name="extension_dashboard_summary">Statusbar, display, and more</string>
-    <string name="extension_category_customization">Customization</string>
-
-    <string name="extension_statusbar_title">Statusbar</string>
-    <string name="extension_statusbar_summary">Network speed, battery style</string>
-    <string name="statusbar_network_speed_title">Show network speed</string>
-    <string name="statusbar_network_speed_summary">Display upload/download speed in the statusbar</string>
-    <string name="statusbar_battery_style_title">Battery icon style</string>
-
-    <string name="extension_display_title">Display</string>
-    <string name="extension_display_summary">Refresh rate and more</string>
-    <string name="display_force_peak_refresh_rate_title">Force peak refresh rate</string>
-    <string name="display_force_peak_refresh_rate_summary">Always use the highest available refresh rate</string>
 </resources>
